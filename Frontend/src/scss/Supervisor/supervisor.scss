@@ -1,0 +1,371 @@
+@import '../colors';
+
+/* Supervisor Sidebar */
+.supervisor-sidebar {
+    background: linear-gradient(to top, #ffffff 0%, #000000 100%);
+    width: 200%; // Adjust to full width on smaller screens
+    max-width: 550px; // Max width for larger screens
+    padding: 20px;
+    height: 100%;
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; // Ensure vertical alignment of items
+}
+
+.supervisor-button {
+    color: $text-color;
+    border: none;
+    padding: 15px 20px; // Adjusted for better responsiveness
+    margin: 10px 5px; // Adjusted for better spacing
+    font-size: 1rem; // Changed to relative unit
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #808080;
+    text-align: center;
+
+    &:hover {
+        background-color: #808080;
+        color: #000000;
+    }
+}
+
+aside h2 {
+    padding-left: 20px; // Adjusted for better spacing
+    margin-bottom: 0;
+    font-size: 1.5rem; // Adjusted for responsiveness
+}
+
+aside .email {
+    color: #808080;
+    padding-left: 20px; // Adjusted for better spacing
+    margin-top: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px; // Adjusted for responsiveness
+    margin-top: 20px; // Adjusted for spacing
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1rem; // Changed to relative unit
+    border: 2px solid white;
+    padding: 8px 10px;
+    width: 90%; // Adjusted for responsiveness
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.supervisor-header,
+.supervisor-footer {
+    width: 100%;
+    color: $text-color;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #e6dede;
+    z-index: 5;
+
+    &.supervisor-header {
+        top: 0;
+        z-index: 5; // Ensure header is on top of other content
+    }
+
+    &.supervisor-footer {
+        bottom: 0;
+        z-index: 5; // Ensure footer is on top of other content
+    }
+}
+
+/* Dashboard Content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; // Adjusted for better spacing
+    width: calc(100% - 250px); // Adjusted for responsive sidebar width
+    margin-top: 60px; // Adjusted for fixed header
+    margin-bottom: 60px; // Adjusted for fixed footer
+    box-sizing: border-box;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Dashboard Summary */
+.dashboard-summary {
+    text-align: center;
+    margin: auto;
+    .summary-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .summary-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+}
+
+/* Footer */
+.supervisor-footer {
+    font-size: 0.75rem; // Adjusted for better scaling
+    padding: 5px 0; // Adjusted for better spacing
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .supervisor-sidebar {
+        max-width: none; // Full width on smaller screens
+    }
+
+    .content {
+        width: 100%; // Full width on smaller screens
+        margin-top: 50px; // Adjusted for fixed header
+        margin-bottom: 50px; // Adjusted for fixed footer
+    }
+}
+
+@media (max-width: 480px) {
+    .supervisor-button {
+        padding: 10px 15px; // Adjusted for smaller screens
+        font-size: 0.875rem; // Adjusted for smaller screens
+    }
+
+    aside h2 {
+        font-size: 1.25rem; // Adjusted for smaller screens
+    }
+
+    .profile-pic {
+        width: 80px; // Adjusted for smaller screens
+    }
+
+    .links {
+        font-size: 0.875rem; // Adjusted for smaller screens
+    }
+
+    .supervisor-footer {
+        font-size: 0.625rem; // Adjusted for smaller screens
+    }
+}
+
+// new one 
+
+.bell{
+
+width: 50px; // Adjusted for responsiveness
+margin-top: 20px; // Adjusted for spacing
+margin-left: auto;
+margin-right: auto;
+background-color: #b3e6b3;
+}
+
+//FOR POPUP
+.notificationpopup {
+    position: fixed; // Fixed positioning to center on the page
+    top: 50%; // Center vertically
+    left: 50%; // Center horizontally
+    transform: translate(-50%, -50%); // Adjust positioning to center
+    background-color: white; // Background color of the popup
+    border: 1px solid #ccc; // Optional: border
+    padding: 30px; // Padding inside the popup
+    width: 600px; // Set a fixed width for the popup
+    height: 800px; // Set a fixed height for the popup
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); // Shadow for effect
+    z-index: 10; // Ensure popup is above other elements
+    overflow-y: auto; // Add scroll if content exceeds height
+
+    .closenotification-button{
+        margin-top: 20px; // Space between cards and button
+        padding: 15px 30px; // Increase button padding for size
+        background-color: $button-colour; // Use your defined color variable
+        color: white; // Text color
+        border: none; // Remove border
+        border-radius: 5px; // Rounded corners
+        cursor: pointer; // Pointer cursor on hover
+        align-self: center; // Center the button
+        
+    }
+  }
+
+  //nOTIFICATION CARD
+  .notification-card {
+    background-color: #f9f9f9; // Background color for each card
+    border: 1px solid #ddd; // Border for each card
+    padding: 15px; // Padding inside the card
+    margin: 10px 0; // Space between cards
+    border-radius: 5px; // Rounded corners
+
+    &.unread {
+        font-weight: bold; // Make unread notifications bold
+        background-color: #e7f3fe; // Light blue background for unread
+      }
+    
+      &.read {
+        color: gray; // Change color for read notifications
+        background-color: #f9f9f9; // Regular background for read
+      }
+
+    .notification-message {
+        font-weight: bold; // Make the message bold
+        margin-bottom: 5px; // Space between message and date
+      }
+    
+      .notification-date, .Assigner {
+        font-size: 0.9em; // Slightly smaller font for the date
+        color: gray; // Color for the date
+        margin-top: 5px; // Space above the date
+      }
+  }
+
+  //For them to be on the same line 
+
+  .oneline{
+
+    display: flex; // Use flexbox to arrange children in a row
+  align-items: center; // Vertically center the items
+  justify-content: space-between; // Space items out
+  padding: 20px; // Add some padding around the container
+  background-color: #b3e6b3; // Background color for the container
+  //border: 1px solid #ddd; // Optional border
+  //border: 1px solid #ddd; // Optional border
+  border-radius: 5px; // Optional rounded corners
+  
+
+  .image-container{
+    //width: 150px; // Adjust the width as needed
+    height: auto; // Maintain aspect ratio
+  }
+
+  .textse{
+    flex-grow: 1; // Allow the text to take up available space
+    margin-right: 20px; // Space between text and image
+  }
+
+  }
+
+  // For number on the bell
+  .notification-bell-container {
+    position: relative; // Allow absolute positioning of the badge
+    display: inline-block; // Keep the container inline
+  
+    .bell {
+      width: 40px; // Adjust size of the bell icon as needed
+      height: auto; // Maintain aspect ratio
+    }
+  
+    .notification-badge {
+      position: absolute; // Position the badge absolutely
+      top: 23px; // Align to the top
+      left: 34px; // Align to the left
+      transform: translate(-50%, -50%); // Center the badge
+      background-color: red; // Badge color
+      color: white; // Text color
+      border-radius: 50%; // Circular badge
+      padding: 4px 8px; // Padding for the badge
+      font-size: 12px; // Font size for the number
+      font-weight: bold; // Make the number bold
+      min-width: 20px; // Minimum width for the badge
+      text-align: center; // Center text
+    }
+  }
+  
+
+  //For cross ya go tswalela
+  .notificationpopup {
+   
+    .close-popup-button {
+      position: absolute; // Position absolutely within the popup
+      top: 10px; // Distance from the top
+      right: 10px; // Distance from the right
+      background: none; // No background
+      border: none; // No border
+      font-size: 20px; // Font size for the X
+      color: #333; // Color for the X
+      cursor: pointer; // Change cursor to pointer
+    }
+  }
+
+  //For delete notification 
+  .bin-pic{
+    width: 40px; // Adjust size of the bell icon as needed
+    height: auto; // Maintain aspect ratio
+    margin-top: 20px; // Adjusted for spacing
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+// For gore aobutxi the popup , eskaya kgonoya felo
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Make sure it's above other elements */
+  }
+
+  
+  .notificationpopup {
+    position: fixed; // Fixed positioning to center on the page
+    top: 50%; // Center vertically
+    left: 50%; // Center horizontally
+    transform: translate(-50%, -50%); // Adjust positioning to center
+    background-color: white; // Background color of the popup
+    border: 1px solid #ccc; // Optional: border
+    padding: 30px; // Padding inside the popup
+    width: 600px; // Set a fixed width for the popup
+    height: auto; // Set height to auto to accommodate content
+    max-height: 80%; // Limit max height to prevent overflow
+    overflow-y: auto; // Add scroll if content exceeds height
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); // Shadow for effect
+    z-index: 1000; // Ensure popup is above overlay
+  }
+  
+  
+ 
+  

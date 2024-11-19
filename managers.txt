@@ -1,0 +1,51 @@
+Managers
+{
+  "empID": "E12345",
+  "name": "John",
+  "surname": "Doe",
+  "email": "john.doe@example.com",
+  "contact": "+1234567890",
+  "deptID": 100,
+  "roleCategory": "manager",
+  "password": "securePassword123"
+}
+{
+  "empID": "E54321",
+  "name": "Alice",
+  "surname": "Johnson",
+  "email": "alice.johnson@example.com",
+  "contact": "+1122334455",
+  "deptID": 200,
+  "roleCategory": "manager",
+  "password": "differentPassword789"
+}
+{
+  "empID": "E67890",
+  "name": "Jane",
+  "surname": "Smith",
+  "email": "khanyisilekelebogile@gmail.com",
+  "contact": "+0987654321",
+  "deptID": 300,
+  "roleCategory": "manager",
+  "password": "anotherSecurePassword456"
+}
+{
+  "empID": "E98765",
+  "name": "Michael",
+  "surname": "Brown",
+  "email": "michael.brown@example.com",
+  "contact": "+1230984567",
+  "deptID": 400,
+  "roleCategory": "manager",
+  "password": "MichaelManagerPass!"
+}
+{
+  "empID": "E23456",
+  "name": "Sophia",
+  "surname": "Davis",
+  "email": "sophia.davis@example.com",
+  "contact": "+1456789012",
+  "deptID": 500,
+  "roleCategory": "manager",
+  "password": "SophiaManager2024"
+}

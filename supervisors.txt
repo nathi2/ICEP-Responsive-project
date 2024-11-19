@@ -1,0 +1,101 @@
+Supervisors
+{
+  "empID": "E13579",
+  "name": "Emily",
+  "surname": "Clark",
+  "email": " ",
+  "contact": "+1223344556",
+  "deptID": 100,
+  "roleCategory": "supervisor",
+  "password": "EmilySupervisor2024"
+}
+{
+  "empID": "E24680",
+  "name": "David",
+  "surname": "Wilson",
+  "email": "david.wilson@municipal.com",
+  "contact": "+1324354657",
+  "deptID": 200,
+  "roleCategory": "supervisor",
+  "password": "DavidSupervisor@2024"
+}
+{
+  "empID": "E35791",
+  "name": "Olivia",
+  "surname": "Martinez",
+  "email": "olivia.martinez@municipal.com",
+  "contact": "+1435465789",
+  "deptID": 300,
+  "roleCategory": "supervisor",
+  "password": "OliviaSupervisory2024"
+}
+{
+  "empID": "E46802",
+  "name": "James",
+  "surname": "Taylor",
+  "email": "james.taylor@municipal.com",
+  "contact": "+1546576890",
+  "deptID": 400,
+  "roleCategory": "supervisor",
+  "password": "JamesSupervision@2024"
+}
+{
+  "empID": "E57913",
+  "name": "Charlotte",
+  "surname": "Harris",
+  "email": "charlotte.harris@municipal.com",
+  "contact": "+1657689012",
+  "deptID": 500,
+  "roleCategory": "supervisor",
+  "password": "CharlotteSupervisor2024"
+}
+{
+  "empID": "E68024",
+  "name": "Lucas",
+  "surname": "Parker",
+  "email": "lucas.parker@municipal.com",
+  "contact": "+1768790123",
+  "deptID": 100,
+  "roleCategory": "supervisor",
+  "password": "LucasSupervisor2024!"
+}
+{
+  "empID": "E79135",
+  "name": "Isabella",
+  "surname": "Lee",
+  "email": "isabella.lee@municipal.com",
+  "contact": "+1879123456",
+  "deptID": 200,
+  "roleCategory": "supervisor",
+  "password": "IsabellaSupervisor2024!"
+}
+{
+  "empID": "E80246",
+  "name": "Ethan",
+  "surname": "Wilson",
+  "email": "ethan.wilson@municipal.com",
+  "contact": "+1980234567",
+  "deptID": 300,
+  "roleCategory": "supervisor",
+  "password": "EthanSupervisor2024!"
+}
+{
+  "empID": "E91357",
+  "name": "Ava",
+  "surname": "Miller",
+  "email": "ava.miller@municipal.com",
+  "contact": "+1092345678",
+  "deptID": 400,
+  "roleCategory": "supervisor",
+  "password": "AvaSupervisor2024!"
+}
+{
+  "empID": "E02468",
+  "name": "Mia",
+  "surname": "Rodriguez",
+  "email": "mia.rodriguez@municipal.com",
+  "contact": "+1103456789",
+  "deptID": 500,
+  "roleCategory": "supervisor",
+  "password": "MiaSupervisor2024!"
+}

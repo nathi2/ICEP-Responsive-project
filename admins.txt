@@ -1,0 +1,26 @@
+ADMIN
+{
+  "name": "Elena",
+  "email": "elena.admin@organization.com",
+  "password": "ElenaAdminPass#2024"
+}
+{
+  "name": "Mark Spencer",
+  "email": "mark.spencer@admin.com",
+  "password": "MarkSecure2024!"
+}
+{
+  "name": "Sophia Admin",
+  "email": "sophia.admin@example.com",
+  "password": "SophiaAdmin#123"
+}
+{
+  "name": "Oliver King",
+  "email": "oliver.king@adminportal.com",
+  "password": "Oliver@Admin2024"
+}
+{
+  "name": "Liam Lee",
+  "email": "liam.lee@admin.com",
+  "password": "LiamAdminSecure!"
+}

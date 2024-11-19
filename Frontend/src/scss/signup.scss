@@ -1,0 +1,151 @@
+@import './colors';
+@import '~bootstrap/scss/bootstrap';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style {
+  border-radius: 20px;
+  background-color: $button-colour;
+  color: $text-color;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sign Up Page Styles */
+.signup-home {
+  background-color: #ffffff;
+  background-image: linear-gradient(60deg, #66B539, #E8F7DD, #004a3a);
+  background-size: 600% 600%;
+  animation: bgAnimationGradient 15s infinite linear;
+}
+
+@keyframes bgAnimationGradient {
+  0% { background-position: 0 85%; }
+  50% { background-position: 100% 20%; }
+  100% { background-position: 0 85%; }
+}
+
+.signup-section {
+  width: 100vw;
+  height: 100vh;
+  @include flex-center;
+  flex-direction: column;
+
+  .form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .login-link {
+      color: $button-colour;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  form {
+    width: 90%; // Mobile-first design, 90% width on small screens
+    padding: 20px;
+    background: rgba(82, 156, 82, 0.9);
+    border-radius: 10px;
+
+    .details-div {
+      margin-bottom: 15px;
+      position: relative;
+
+      .signup-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #000;
+        font-size: 18px;
+      }
+
+      input {
+        width: calc(100% - 40px); // Adjust for the icon width
+        padding: 10px;
+        padding-left: 40px; // Space for the icon
+        border: 1px solid $input-border;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: $section-background;
+      }
+    }
+
+    .btn {
+      @include button-style;
+      width: 100%;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      background-color: $button-colour;
+    }
+  }
+}
+
+// Tablet and Larger Screens
+@media (min-width: 768px) {
+  .signup-section {
+    form {
+      width: 70%; // Wider form for tablets
+    }
+
+    .form-heading img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .form-heading h1 {
+      font-size: 32px;
+    }
+
+    .btn {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .signup-section {
+    form {
+      width: 50%; // Even wider form for desktops
+    }
+
+    .form-heading img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .btn {
+      font-size: 22px;
+    }
+  }
+}
